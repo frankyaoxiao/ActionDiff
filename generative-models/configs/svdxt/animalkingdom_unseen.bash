@@ -1,0 +1,21 @@
+python scripts/train.py \
+    --loss_type focal \
+    --batch_size 16 \
+    --num_epochs 15 \
+    --lr 3e-5 \
+    --seed 52 \
+    --mixup_alpha 0.2 \
+    --num_warmup_epochs 4 \
+    --optimizer adam \
+    --weight_decay 1e-4 \
+    --save_dir final/svdxt/animalkingdom_unseen_svdxt_20 \
+    --data_root data/animal_kingdom/svdxt_gridsearch/20/feats/layer_9 \
+    --dataset animalkingdom-new-species \
+    --max_length 150 \
+    --decoder_heads 8 \
+    --decoder_layers 6 \
+    --focal_alpha 0.25 \
+    --focal_gamma 2.0 \
+    --use_mean \
+    --model_type classificationtransformer \
+    --device cuda \

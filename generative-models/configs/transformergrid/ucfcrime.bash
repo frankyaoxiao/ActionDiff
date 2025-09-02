@@ -1,0 +1,13 @@
+python scripts/grid_search.py \
+    --base_dir final/ucfcrime_gridsearch_transformer \
+    --parent_dir data/ucfcrime/svdxt_grid_search \
+    --dataset ucfcrime \
+    --model_type classificationtransformer \
+    --trainviewpoint 1 \
+    --testviewpoint 1 \
+    --mixup_alpha 0.0 \
+    --num_epochs 15 \
+    --lr 3e-5 \
+    --weight_decay 1e-3 \
+    --max_length 400 \
+    --decoder_layers 7 \

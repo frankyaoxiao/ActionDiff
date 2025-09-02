@@ -1,0 +1,13 @@
+python scripts/grid_search.py \
+    --base_dir results/hmdb_gridsearch_transformer \
+    --parent_dir data/hmdb/grid_search \
+    --dataset hmdb \
+    --model_type classificationtransformer \
+    --mixup_alpha 0.2 \
+    --num_epochs 15 \
+    --lr 1e-5 \
+    --weight_decay 1e-4 \
+    --max_length 300 \
+    --decoder_layers 6 \
+    --num_partitions 1 \
+    --partition_id 0 

@@ -1,0 +1,15 @@
+python scripts/grid_search.py \
+    --base_dir final/animal_kingdom_gridsearch_subsampled \
+    --parent_dir data/animal_kingdom/svdxt_gridsearch \
+    --dataset animalkingdom \
+    --model_type classificationtransformer \
+    --trainviewpoint 3 \
+    --testviewpoint 1 \
+    --mixup_alpha 0.2 \
+    --num_epochs 15 \
+    --lr 3e-5 \
+    --weight_decay 1e-4 \
+    --max_length 150 \
+    --decoder_layers 6 \
+    --num_partitions 8 \
+    --partition_id 7

@@ -1,0 +1,15 @@
+python scripts/grid_search.py \
+    --base_dir final/charades1-1valMLP \
+    --parent_dir data/charadesego \
+    --dataset charades \
+    --model_type mlp \
+    --trainviewpoint 1 \
+    --testviewpoint 1 \
+    --mixup_alpha 0.2 \
+    --num_epochs 50 \
+    --lr 1e-5 \
+    --weight_decay 1e-4 \
+    --max_length 400 \
+    --decoder_layers 7 \
+    --num_partitions 1 \
+    --partition_id 0

@@ -1,0 +1,13 @@
+python scripts/grid_search.py \
+    --base_dir final/gridsearch/animal_kingdom_unseen_gridsearch \
+    --parent_dir data/animal_kingdom/svdxt_gridsearch \
+    --dataset animalkingdom-new-species \
+    --model_type mlp \
+    --trainviewpoint 3 \
+    --testviewpoint 1 \
+    --mixup_alpha 0.2 \
+    --num_epochs 50 \
+    --lr 1e-5 \
+    --weight_decay 1e-4 \
+    --max_length 150 \
+    --decoder_layers 6 \

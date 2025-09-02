@@ -1,0 +1,23 @@
+python scripts/train.py \
+    --loss_type focal \
+    --batch_size 16 \
+    --num_epochs 12 \
+    --lr 1e-4 \
+    --dataset charades \
+    --seed 78 \
+    --mixup_alpha 0.3 \
+    --num_warmup_epochs 4 \
+    --optimizer adam \
+    --weight_decay 1e-3 \
+    --save_dir final/svdxt/charades_1-1_svdxt_20 \
+    --max_length 400 \
+    --decoder_heads 8 \
+    --decoder_layers 7 \
+    --model_type classificationtransformer \
+    --device cuda \
+    --data_root /media/rogerio-lab/rogerio_hd/projects/estract_svd_feats/features/extract_charades_ego_svd_xt_grid_search/extract_charades_ego_svd_xt_grid_search_t=20/feats/layer_9 \
+    --focal_alpha 1 \
+    --focal_gamma 2 \
+    --trainviewpoint 1 \
+    --testviewpoint 1 \
+    --use_mean \

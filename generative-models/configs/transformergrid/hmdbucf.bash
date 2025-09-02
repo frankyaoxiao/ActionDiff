@@ -1,0 +1,14 @@
+python scripts/grid_search.py \
+    --base_dir results/hmdb-ucf_gridsearch_transformer \
+    --parent_dir data/hmdb/grid_search \
+    --parent_dir2 data/ucf/grid_search \
+    --dataset hmdb-ucf \
+    --model_type classificationtransformer \
+    --mixup_alpha 0.0 \
+    --num_epochs 15 \
+    --lr 1e-5 \
+    --weight_decay 1e-4 \
+    --max_length 500 \
+    --decoder_layers 6 \
+    --num_partitions 1 \
+    --partition_id 0

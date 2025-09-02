@@ -1,0 +1,24 @@
+python scripts/train.py \
+    --loss_type focal \
+    --batch_size 16 \
+    --num_epochs 20 \
+    --lr 1e-4 \
+    --dataset charades \
+    --seed 62 \
+    --mixup_alpha 0.3 \
+    --num_warmup_epochs 4 \
+    --optimizer adam \
+    --weight_decay 1e-3 \
+    --save_dir final/videoMAE/charades_3-1_videoMAE \
+    --max_length 400 \
+    --decoder_heads 8 \
+    --decoder_layers 7 \
+    --model_type classificationtransformer \
+    --device cuda \
+    --data_root data/charadesego/maenoft \
+    --focal_alpha 1 \
+    --focal_gamma 2 \
+    --trainviewpoint 3 \
+    --testviewpoint 1 \
+    --use_mean \
+

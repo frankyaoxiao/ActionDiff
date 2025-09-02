@@ -1,0 +1,23 @@
+python scripts/train.py \
+    --loss_type focal \
+    --batch_size 16 \
+    --num_epochs 10 \
+    --lr 1e-4 \
+    --dataset charades \
+    --seed 62 \
+    --mixup_alpha 0.3 \
+    --num_warmup_epochs 4 \
+    --optimizer adam \
+    --weight_decay 1e-3 \
+    --save_dir final/sdv2/charades_1-3_sdv2 \
+    --max_length 400 \
+    --decoder_heads 8 \
+    --decoder_layers 7 \
+    --model_type classificationtransformer \
+    --device cuda \
+    --data_root data/charadesego/extract_charades_ego_sdv2/feats/layer_9 \
+    --focal_alpha 1 \
+    --focal_gamma 2 \
+    --trainviewpoint 1 \
+    --testviewpoint 3 \
+    --use_mean \

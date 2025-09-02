@@ -1,0 +1,20 @@
+python scripts/train.py \
+    --loss_type ce \
+    --batch_size 16 \
+    --num_epochs 15 \
+    --lr 1e-5 \
+    --seed 42 \
+    --mixup_alpha 0.0 \
+    --num_warmup_epochs 4 \
+    --optimizer adam \
+    --weight_decay 1e-4 \
+    --max_length 500 \
+    --decoder_heads 8 \
+    --decoder_layers 6 \
+    --model_type classificationtransformer \
+    --device cuda \
+    --dataset ucf-hmdb \
+    --data_root data/ucf/extract_ucf_25_frames_svd-xt/feats/layer_9 \
+    --data_root2 data/hmdb/extract_hmdb_25_frames_svd-xt/feats/layer_9 \
+    --save_dir results/ucf-hmdb_svdxt_layer_9 \
+    --use_mean \

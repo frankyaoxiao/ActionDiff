@@ -1,0 +1,15 @@
+python scripts/grid_search.py \
+    --base_dir final/charades1-3_gridsearch_transformer \
+    --parent_dir data/charadesego/charadesxt_gridsearch \
+    --dataset charades \
+    --model_type classificationtransformer \
+    --trainviewpoint 1 \
+    --testviewpoint 3 \
+    --mixup_alpha 0.3 \
+    --num_epochs 15 \
+    --lr 1e-4 \
+    --weight_decay 1e-3 \
+    --max_length 400 \
+    --decoder_layers 7 \
+    --num_partitions 1 \
+    --partition_id 0 \

@@ -1,0 +1,13 @@
+python scripts/grid_search.py \
+    --base_dir results/ucf_gridsearch_transformer \
+    --parent_dir data/ucf/grid_search \
+    --dataset ucf \
+    --model_type classificationtransformer \
+    --mixup_alpha 0.2 \
+    --num_epochs 15 \
+    --lr 1e-5 \
+    --weight_decay 1e-4 \
+    --max_length 500 \
+    --decoder_layers 6 \
+    --num_partitions 1 \
+    --partition_id 0 

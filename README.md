@@ -1,6 +1,22 @@
-# ActionDiff: Cross-Dataset SVD Feature Analysis
+<h1 align='center'>ActionDiff: Diffusion-Based Action Recognition Generalizes to Untrained Domains</h1>
+<div align='center'>
+    Rogério Guimarães<sup>1*</sup> 
+    Frank Xiao<sup>1*</sup> 
+    Pietro Perona<sup>1</sup> 
+    Markus Marks<sup>1</sup>
+  </div>
+  <div align='center'>
+    <sup>1</sup>California Institute of Technology
+  </div>
+  <br>
+  <div align="center">
+    <a href="https://vision.caltech.edu/actiondiff/"><img src="https://img.shields.io/static/v1?label=Project&message=Page&color=purple"></a>  
+    <a href="https://arxiv.org/pdf/2509.08908"><img src="https://img.shields.io/static/v1?label=Paper&message=ArXiv&color=red&logo=arxiv"></a>  
+    <a href="https://github.com/frankyaoxiao/ActionDiff"><img src="https://img.shields.io/static/v1?label=Code&message=GitHub&color=blue&logo=github"></a>
+  </div>
 
-This repository provides code for analyzing video features extracted from Stable Video Diffusion (SVD) models across multiple datasets.
+*Equal contribution
+
 
 ## Prerequisites
 - Python 3.10.0
